@@ -18,7 +18,7 @@ internal fun calculateDirection(start: Rect, end: Rect): TransitionDirection =
 internal fun calculateAlpha(
     direction: TransitionDirection?,
     fadeMode: FadeMode?,
-    fraction: Float,  // Absolute
+    fraction: Float,  // Absolute!!
     isStart: Boolean
 ) = when (fadeMode) {
     FadeMode.In, null -> if (isStart) 1f else fraction
